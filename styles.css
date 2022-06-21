@@ -18,3 +18,7 @@ body {
 .grid-square {
     background-color: aliceblue;
 }
+
+.grid-square-hovered {
+    background-color: navy;
+}

@@ -1,5 +1,5 @@
 const gridContainer = document.querySelector('.container')
-const gridSize = 16
+let gridSize = 16
 
 makeGrid()
 
@@ -11,6 +11,9 @@ function makeGrid() {
             gridSquare.classList.add('grid-square')
             gridSquare.style.width = squareWidth
             gridSquare.style.paddingTop = squareWidth
+            gridSquare.addEventListener('mouseover', e => {
+                e.currentTarget.classList.add('grid-square-hovered')
+            })
             gridContainer.appendChild(gridSquare)
         }
     }
