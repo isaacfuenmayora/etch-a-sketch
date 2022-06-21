@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(91, 89, 89);
+}
+
 .container {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    width: 75%;
 }
 
 .grid-square {
